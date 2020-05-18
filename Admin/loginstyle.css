@@ -1,0 +1,60 @@
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    background-image: url('back.PNG'); 
+    height: 1100px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    }
+    .bainer{
+        background-image: url("index-3.jfif");
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+         background-repeat: no-repeat;
+    }
+    ul li:hover{
+        background-color: #731A0E;
+        padding: 5px;
+
+    }
+    h1{
+      animation-name: animate;
+     
+    animation-duration:12s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes animate{
+    0%{
+      color: white;
+      font-family: "Times New Roman", Times, serif;
+    }
+    40%{
+      color: gray;
+      font-family: "Times New Roman", Times, serif;
+    }
+    60%{ color: black;
+    font-family: "Times New Roman", Times, serif; }
+  }
+ /* Seeer Form*/
+ input{
+  width: 250px;
+  height:  35px;
+  border:2px solid red;
+  border-radius: 10px 10px;
+
+ }
+ button{
+  height: 35px;
+  width: 250px;
+  border:2px solid #ff6666;
+  border-radius: 10px 10px;
+  background-color: #ff4d4d;
+  color: white;
+ }
+
+   
+

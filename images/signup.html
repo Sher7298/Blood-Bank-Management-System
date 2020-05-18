@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Bank Management System</title>
+  <script type="text/javascript" src="signupvalidation.js"></script>
+<style type="text/css">
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+  
+
+	.bainer{
+		background-image: url("index-3.jfif");
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		height: 500px;
+		 background-repeat: no-repeat;
+	}
+  form input{
+    border:none;
+  }
+
+
+img{
+    margin-top: 230px;
+    margin-left: 100px;
+    animation-name: SignUppic;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    
+  }
+  @keyframes SignUppic{
+    
+    0% {transform: translate(-50%,-50%) skewY(5deg);}
+  
+    50%{ transform: translate(-50%,-50%) skewY(-5deg);}
+   
+    100%{ transform: translate(-50%,-50%) skewY(5deg); }
+  
+  }
+
+</style>
+
+<meta charset="utf-8">
+ <!-- Form Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	
+</head>
+
+ <div class="containerfluid" >
+  <div class="row" style="background-color: #BD4232">
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"><span class="fas fa-hand-holding-heart" style="font-size: 70px;color: white;"><span style="font-size: 30px;margin-left: 10px;">Save Human Lives</span></span>
+  </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+      
+    </div>
+</div>
+
+<nav class="navbar navbar-default " style="background-color: #731A0E; padding: 0px" >
+    <div class="container" >
+       
+           <button class="navbar-toggle"  type="button"  data-target="#response" data-toggle="collapse" >
+       <span class="navbar-toggle-icon"></span>
+       </button>
+
+      <div class="collapse navbar-collapse " id="response">
+        <ul class=" nav navbar-nav  "  >
+          <li class="navbar-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: white">Home</a></li>
+          
+          <li class="navbar-item " ><a href="#" class="nav-link" style="color: white">Register</a></li>
+          <li class="navbar-item"><a href="#" class="nav-link" style="color: white">Emergency#</a></li>
+           <li class="navbar-item"><a href="#" class="nav-link" style="color: white">Contact Us</a></li>
+          <li class="navbar-item"><a href="#" class="nav-link" style="color: white">About</a></li>
+          
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+              <li><a href="Signup.html" style="color: white"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+              <li class="navbar-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white"><span class="glyphicon glyphicon-log-in"></span> Login<span class="caret"></span></a>
+
+                   <ul class="dropdown-menu" style="background-color: #731A0E">
+                     <li class="navbar-item"><a href="#" class="nav-link" style="color: white"> User</a></li>
+                     <li class="navbar-item"><a href="#" class="nav-link" style="color: white;"> Admin</a></li>
+                   </ul>
+
+              </li>
+             </ul>
+
+      </div>
+</div>
+  </nav>
+  
+
+<!-- Registration From IS Start Form Here  -->>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+     
+    </div>
+  </div>
+</div>
+<br><br> -->
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-4 "><span class="image"><img src="Become.jpg" ></span></div>
+    <div class="col-lg-8">
+
+       <h2 style="font-size: 35px;">
+           <span class="glyphicon glyphicon-user" style="color: #F70F24">
+            </span>Registration Form</h2><br><br>
+
+         <form action="#">
+           
+            <div class="form-group">
+             <input type="text" name="Name" id="Name" class="form-control input-sm" placeholder="Enter Donor Name" style="height: 40px;width: 300px; border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black">
+            </div>
+
+             <div class="form-group">
+                 <select style="height: 40px;width: 300px;border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black">
+                            <option value="Select">Select Donor Gender Here</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+              </div>
+
+               <div class="form-group">
+                         <select style="height: 40px;width: 300px;border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black">
+                            <option value="Select1">Select Donor Blood Group Here</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                             <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                             <option>O+</option>
+                            <option>O-</option>
+                          
+                          </select>
+                </div>
+
+                <div class="form-group">                         
+                 <input type="Password" name="Age" id="Age" class="form-control input-sm" placeholder="Enter Donor Age" style="height: 40px;width: 300px;border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black" >
+                </div>
+
+                <div class="form-group">
+                 <input type="text" name="Contact" id="Contact" class="form-control input-sm" placeholder="Enter Donor contact Number" style="height: 40px;width: 300px;border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black">
+                </div>  
+
+                <div class="form-group">
+                 <input type="text" name="Address" id="Address" class="form-control input-sm" placeholder="Enter Donor Address" style="height: 40px;width: 300px;border-left: none;border-top: none;border-right: none; border-bottom: 2px solid black">
+                </div>
+
+         </form>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="containerfluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-4 col-lg-12"></div>
+    <div class="col-lg-4">
+                    <h3>Follow Us On <span class="fas fa-hand-point-down" style="font-size: 50px;color: red"></span></h3>
+                    <span class="fab fa-facebook-square" style="font-size: 40px;color:#001EFF;padding: 5px;"></span>
+                    <span class="fab fa-instagram" style="font-size: 40px;color:#F70F24; padding: 5px;"></span>
+                    <span class="fab fa-twitter-square" style="font-size: 40px;color:#001EFF;padding: 5px;"></span>
+                    <span class="fas fa-envelope" style="font-size: 40px;color:#F70F24;padding: 5px;"></span>
+
+    </div>
+    <div class="col-lg-2 col-lg-12"></div>
+  </div>
+</div>
+
+
+<!--  Footer syart from here -->
+<footer class="page-footer text-center" style="background-color:#F70F24">
+  
+    <div class="row">
+      <div class="col-lg-12">
+       
+        <h3><span class="glyphicon glyphicon-user" ></span> © Copyrights  2018 Divisions of SaveHuman Blood Bank. </h3>
+
+      </div>
+            
+    </div>
+  </div>
+</footer><!--  Footer End from here -->
+</body>
+</html>
+
+
